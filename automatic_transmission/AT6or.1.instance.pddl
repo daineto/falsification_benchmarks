@@ -19,9 +19,9 @@
 	(monitor0c)
 	(= (clock1) 0)
 	
-	(= (Brake) 162.5)
-	(= (Throttle) 50)
-	(= (input_splits) 32)
+	(= (Brake) 0)
+	(= (Throttle) 0)
+	(= (input_splits) 1)
 	(adaptive)
 	
     (= (WheelSpeed) 0)
@@ -450,11 +450,9 @@
 (:goal
 	(and
 		(monitor2)
-		(or
-			(monitor1a)
-			(monitor1b)
-			(monitor1c)
-		)
+		(monitor1a)
+		(monitor1b)
+		(monitor1c)
 	)
 )
 

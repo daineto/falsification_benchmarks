@@ -450,11 +450,9 @@
 (:goal
 	(and
 		(monitor2)
-		(or
-			(monitor1a)
-			(monitor1b)
-			(monitor1c)
-		)
+		(monitor1a)
+		(monitor1b)
+		(monitor1c)
 	)
 )
 

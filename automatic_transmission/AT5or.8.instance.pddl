@@ -13,15 +13,14 @@
 
 (:init
 
-	(monitor0)
-	(monitor0a)
-	(monitor0b)
-	(monitor0c)
-	(= (clock1) 0)
+	(premonitor gear1)
+	(premonitor gear2)
+	(premonitor gear3)
+	(premonitor gear4)
 	
 	(= (Brake) 162.5)
 	(= (Throttle) 50)
-	(= (input_splits) 32)
+	(= (input_splits) 8) ; SOLVED (2,40) (2,50)
 	(adaptive)
 	
     (= (WheelSpeed) 0)
@@ -449,12 +448,11 @@
 
 (:goal
 	(and
-		(monitor2)
-		(or
-			(monitor1a)
-			(monitor1b)
-			(monitor1c)
-		)
+		(<= running_time 40)
+		(monitor2 gear1)
+		(monitor2 gear2)
+		(monitor2 gear3)
+		(monitor2 gear4)
 	)
 )
 

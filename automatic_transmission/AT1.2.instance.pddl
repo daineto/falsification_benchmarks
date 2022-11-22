@@ -437,8 +437,6 @@
 	(= (DownThreshold dtp6 gear3) 50)
 	(= (DownThreshold dtp6 gear4) 80)
 
-
-
 )
 
 (:goal
