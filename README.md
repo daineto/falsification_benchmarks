@@ -1,4 +1,4 @@
-# falsification_benchmarks
+# ARCH-COMP Falsification Benchmarks for PDDL+ Planning
 PDDL+ instances translated from models of the ARCH-COMP falsification competition
 
 Benchmark models include Automatic Transmission (AT) and Chasing Cars (CC).
